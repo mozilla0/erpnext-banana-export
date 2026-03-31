@@ -1,0 +1,18 @@
+include MANIFEST.in
+include *.md
+include *.py
+include *.txt
+include *.toml
+include *.cfg
+recursive-include banana_export *.css
+recursive-include banana_export *.csv
+recursive-include banana_export *.html
+recursive-include banana_export *.ico
+recursive-include banana_export *.js
+recursive-include banana_export *.json
+recursive-include banana_export *.md
+recursive-include banana_export *.png
+recursive-include banana_export *.py
+recursive-include banana_export *.svg
+recursive-include banana_export *.txt
+recursive-exclude banana_export *.pyc
