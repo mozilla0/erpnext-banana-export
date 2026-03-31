@@ -1,5 +1,3 @@
-from . import __version__ as app_version
-
 app_name        = "banana_export"
 app_title       = "Banana Export"
 app_publisher   = "Joker IT AG"
