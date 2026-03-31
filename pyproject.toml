@@ -1,0 +1,20 @@
+[project]
+name = "banana_export"
+version = "1.0.0"
+description = "Banana Buchhaltung CSV Export für Joker IT AG"
+requires-python = ">=3.10"
+dependencies = []
+
+readme = "README.md"
+license = { text = "MIT" }
+
+authors = [
+    { name = "Joker IT AG", email = "info@jokerit.ch" }
+]
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.module]
+name = "banana_export"
