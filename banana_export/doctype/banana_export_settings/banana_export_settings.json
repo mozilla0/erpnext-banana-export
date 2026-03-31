@@ -1,0 +1,54 @@
+{
+  "doctype": "DocType",
+  "name": "Banana Export Settings",
+  "module": "Banana Export",
+  "issingle": 1,
+  "track_changes": 1,
+  "fields": [
+    {
+      "fieldname": "company",
+      "fieldtype": "Link",
+      "label": "Firma",
+      "options": "Company",
+      "reqd": 1
+    },
+    {
+      "fieldname": "section_skip",
+      "fieldtype": "Section Break",
+      "label": "Konten überspringen"
+    },
+    {
+      "fieldname": "skip_accounts",
+      "fieldtype": "Small Text",
+      "label": "Konten überspringen (kommagetrennt)",
+      "description": "Kontonummern die beim Export ignoriert werden, z.B.: 6944, 2201, 2200",
+      "default": "6944, 2201, 2200"
+    },
+    {
+      "fieldname": "section_bank",
+      "fieldtype": "Section Break",
+      "label": "Fremdwährungs-Bankkonten"
+    },
+    {
+      "fieldname": "bank_account_currencies",
+      "fieldtype": "Table",
+      "label": "Bankkonto → Währung",
+      "options": "Banana Bank Currency Mapping"
+    },
+    {
+      "fieldname": "section_mapping",
+      "fieldtype": "Section Break",
+      "label": "Kontenmapping Fremdwährungen"
+    },
+    {
+      "fieldname": "account_mappings",
+      "fieldtype": "Table",
+      "label": "CHF-Konto → Fremdwährungs-Konto",
+      "options": "Banana Account Mapping"
+    }
+  ],
+  "permissions": [
+    { "role": "Accounts Manager", "read": 1, "write": 1 },
+    { "role": "System Manager",   "read": 1, "write": 1 }
+  ]
+}

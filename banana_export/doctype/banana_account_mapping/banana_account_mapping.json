@@ -1,0 +1,40 @@
+{
+  "doctype": "DocType",
+  "name": "Banana Account Mapping",
+  "module": "Banana Export",
+  "istable": 1,
+  "fields": [
+    {
+      "fieldname": "currency",
+      "fieldtype": "Link",
+      "label": "Währung",
+      "options": "Currency",
+      "reqd": 1,
+      "in_list_view": 1,
+      "columns": 2
+    },
+    {
+      "fieldname": "chf_account",
+      "fieldtype": "Int",
+      "label": "CHF-Konto",
+      "reqd": 1,
+      "in_list_view": 1,
+      "columns": 2
+    },
+    {
+      "fieldname": "mapped_account",
+      "fieldtype": "Int",
+      "label": "Fremdwährungs-Konto",
+      "reqd": 1,
+      "in_list_view": 1,
+      "columns": 2
+    },
+    {
+      "fieldname": "description",
+      "fieldtype": "Data",
+      "label": "Beschreibung",
+      "in_list_view": 1,
+      "columns": 4
+    }
+  ]
+}

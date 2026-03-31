@@ -1,0 +1,14 @@
+{
+  "doctype": "Page",
+  "module": "Banana Export",
+  "name": "banana-export",
+  "page_name": "banana-export",
+  "standard": "No",
+  "system_page": 0,
+  "title": "Banana Buchhaltung Export",
+  "roles": [
+    { "role": "Accounts Manager" },
+    { "role": "Accounts User" },
+    { "role": "System Manager" }
+  ]
+}
