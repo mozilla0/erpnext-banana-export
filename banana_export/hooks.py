@@ -12,4 +12,4 @@ app_color       = "#f39c12"
 required_apps = ["frappe", "erpnext"]
 
 # ── Nach App-Installation: Standardwerte setzen ───────────────────────────────
-after_install = "banana_export.setup.after_install"
+after_install = "banana_export.banana_export.setup.after_install"

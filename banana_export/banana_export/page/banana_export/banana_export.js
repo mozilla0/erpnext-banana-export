@@ -91,7 +91,7 @@ frappe.pages["banana-export"].on_page_load = function (wrapper) {
     $("#bp-dl-btn").hide();
 
     frappe.call({
-      method: "banana_export.api.generate_banana_csv",
+      method: "banana_export.banana_export.api.generate_banana_csv",
       args:   { from_date: from, to_date: to },
       callback(r) {
         frappe.hide_progress();
